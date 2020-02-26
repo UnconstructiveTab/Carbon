@@ -1,0 +1,8 @@
+{
+	"host": "mydomain.net",
+	"port": 443,
+	"scheme": "https",
+	"connect": "/connectiontest.jpg",
+	"username": "myuser",
+	"password": "mypassword"
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Carbon Command & Control</title>
+		<link rel="stylesheet" href="/assets/css/popup.css">
+	</head>
+	<body>
+		<img src="/assets/img/header.svg" alt="Carbon, privacy is for everyone." class="logo">
+		<div class="fields">
+			<div class="field">
+				<div class="label">Version</div>
+				<div class="value" id="version"></div>
+			</div>
+			<div class="field">
+				<div class="label">Serial Number</div>
+				<div class="value" id="serial"></div>
+			</div>
+			<div class="field">
+				<div class="label">Server</div>
+				<div class="value" id="server"></div>
+			</div>
+			<div class="field">
+				<div class="label">User</div>
+				<div class="value" id="username"></div>
+			</div>
+			<div class="field clickable" id="checkConnection">
+				<div class="label">Connection</div>
+				<div class="value">
+					<img src="/assets/img/lock.svg" alt="" class="notouch" id="lock">
+					<img src="/assets/img/signal-3.svg" alt="" class="notouch" id="signal">
+				</div>
+			</div>
+		</div>
+		<div class="fields">
+			<div class="field">
+				<img src="/assets/img/vpn.svg" alt="VPN" class="icon">
+				<span class="label">Carbon VPN</span>
+				<div class="switch">
+					<input name="dat-checkbox" id="connectionStatus" type="checkbox">
+					<label for="dat-checkbox" id="toggleConnection"></label>
+				</div>
+			</div>
+		</div>
+		<script src="/assets/js/popup.js"></script>
+	</body>
+</html>
