@@ -21,7 +21,7 @@ getConfig((config) => {
 		let xhr = new XMLHttpRequest();
 		let startTime = (new Date()).getTime();
 		try {
-			xhr.open("GET", "//" + config.host + config.connect + "?" + uid(), true);
+			xhr.open("GET", config.scheme + "://" + config.host + config.connect + "?" + uid(), true);
 			xhr.send();
 		} catch(e) {
 			console.warn("Couldn't connect to host test.");
